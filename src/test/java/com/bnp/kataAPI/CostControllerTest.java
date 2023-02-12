@@ -14,6 +14,7 @@ public class CostControllerTest {
 
 	@Test
 	public void costTestOk() throws Exception {
-		mockMvc.perform(MockMvcRequestBuilders.get("/api/cost")).andExpect(MockMvcResultMatchers.status().isOk());
+		mockMvc.perform(MockMvcRequestBuilders.get("/api/cost").param("title", "title 1").param("titl", "title 2"))
+				.andExpect(MockMvcResultMatchers.status().isOk());
 	}
 }
