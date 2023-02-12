@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "1c8ff7bf-7df9-45dd-9b09-22a2c5487a53",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BasketCost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cost?title=Clean Code,The Clean Coder,The Clean Coder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cost"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Clean Code,The Clean Coder,The Clean Coder"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
